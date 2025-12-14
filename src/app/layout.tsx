@@ -1,5 +1,6 @@
 
 import type { Metadata } from "next";
+import Header from "@/components/header";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,23 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="min-h-screen bg-white text-neutral-900 antialiased">
         <div className="mx-auto max-w-5xl px-6">
-          <header className="flex items-center justify-between py-6">
-            <div className="font-semibold">Denis Agency</div>
-            <nav className="flex gap-6 text-sm text-neutral-700">
-              <a href="/" className="hover:text-neutral-900">
-                Home
-              </a>
-              <a href="/projects" className="hover:text-neutral-900">
-                Projects
-              </a>
-              <a href="/services" className="hover:text-neutral-900">
-                Services
-              </a>
-              <a href="/contact" className="hover:text-neutral-900">
-                Contact
-              </a>
-            </nav>
-          </header>
+          <Header />
 
           <main className="py-10">{children}</main>
 
