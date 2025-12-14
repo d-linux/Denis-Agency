@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Denis | Web Developer",
-  description: "Modern websites and web apps built with Next.js.",
+  title: "Denis Koumbou | Web Developer",
+  description: "Modern Portfolio Website Built with Next.js.",
 };
 
 export default function RootLayout({
