@@ -1,13 +1,18 @@
-<div className="mb-6 rounded-xl border p-4">
-  <p className="sm:hidden">If you see this on desktop, sm is NOT working.</p>
-  <p className="hidden sm:block">If you see this on desktop, sm IS working.</p>
-</div>
-
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home | Denis Koumbou - Web Developer",
+  description: "Modern websites for small businesses that want more leads. Next.js Developer specializing in fast, responsive websites using Next.js and Tailwind.",
+  openGraph: {
+    title: "Home | Denis Koumbou - Web Developer",
+    description: "Modern websites for small businesses that want more leads. Next.js Developer specializing in fast, responsive websites.",
+  },
+};
 
 export default function Home() {
   return (
-    <div className="space-y-16">
+    <div className="space-y-20">
       {/* HERO */}
       <section className="space-y-6">
         <div className="space-y-3">

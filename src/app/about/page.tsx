@@ -1,4 +1,10 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About | Denis Koumbou - Web Developer",
+  description: "Learn about Denis Koumbou, a Next.js developer specializing in modern, responsive websites for small businesses.",
+};
 
 export default function AboutPage() {
   return (

@@ -1,4 +1,10 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Services | Denis Koumbou - Web Developer",
+  description: "Web development services by Denis Koumbou: Landing pages, business websites, and custom web apps built with Next.js.",
+};
 
 type Package = {
   name: string;

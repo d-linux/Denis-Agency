@@ -112,7 +112,7 @@ export default function ContactPage() {
               <textarea
                 value={form.message}
                 onChange={(e) => updateField("message", e.target.value)}
-                className="min-h-[140px] w-full rounded-xl border border-neutral-300 px-4 py-3 text-sm outline-none focus:border-neutral-500"
+                className="min-h-36 w-full rounded-xl border border-neutral-300 px-4 py-3 text-sm outline-none focus:border-neutral-500"
                 placeholder="What do you want the website to do? (calls, bookings, leads, etc.)"
               />
               <p className="text-xs text-neutral-500">

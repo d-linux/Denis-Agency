@@ -1,4 +1,10 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects | Denis Koumbou - Web Developer",
+  description: "Explore Denis Koumbou's portfolio of web development projects, including modern websites built with Next.js and Tailwind CSS.",
+};
 
 type Project = {
   title: string;
