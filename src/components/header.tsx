@@ -22,8 +22,8 @@ export default function Header() {
   }, [pathname]);
 
   return (
-    <header className="sticky top-0 bg-white py-6 z-10">
-      <div className="flex items-center justify-between">
+    <header className="sticky top-0 bg-white py-6 z-10 shadow-sm">
+      <div className="flex items-center justify-between px-6">
         <Link href="/" className="font-semibold text-lg">
           <span className="text-neutral-900">Techno</span>
           <span className="text-blue-600">Skills</span>
@@ -37,7 +37,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={isActive ? "text-neutral-900" : "hover:text-neutral-900"}
+                className={isActive ? "text-neutral-900 underline" : "hover:text-neutral-900 hover:underline"}
               >
                 {item.label}
               </Link>
@@ -74,7 +74,7 @@ export default function Header() {
                       "block rounded-xl px-4 py-3 text-sm",
                       isActive
                         ? "bg-neutral-900 text-white"
-                        : "text-neutral-700 hover:bg-neutral-50 hover:text-neutral-900",
+                        : "text-neutral-700 hover:bg-neutral-50 hover:text-neutral-900 hover:underline",
                     ].join(" ")}
                   >
                     {item.label}

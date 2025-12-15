@@ -38,10 +38,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen bg-white text-neutral-900 antialiased leading-relaxed">
-        <div className="mx-auto max-w-5xl px-6">
-          <Header />
+        <Header />
 
-          <main className="py-16">{children}</main>
+        <div className="fixed top-16 left-0 w-full bg-blue-600 text-white py-2 z-40">
+          <div className="flex justify-center gap-6 text-sm px-6">
+            <span>Fast delivery (7–14 days typical)</span>
+            <span>Mobile-first design</span>
+            <span>SEO-ready structure</span>
+          </div>
+        </div>
+
+        <div className="w-full px-6 pt-16">
+          <main className="py-4">{children}</main>
 
           <footer className="border-t py-8 text-sm text-neutral-600">
             © {new Date().getFullYear()} Techno Skills. All rights reserved.
