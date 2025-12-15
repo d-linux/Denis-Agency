@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const nav = [
   { href: "/", label: "Home" },
@@ -11,30 +12,78 @@ const nav = [
   { href: "/contact", label: "Contact" },
 ];
 
-
 export default function Header() {
   const pathname = usePathname();
+  const [open, setOpen] = useState(false);
+
+  // Close menu when route changes
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
 
   return (
-    <header className="flex items-center justify-between py-6">
-      <Link href="/" className="font-semibold">
-        Denis
-      </Link>
+    <header className="py-6">
+      <div className="flex items-center justify-between">
+        <Link href="/" className="font-semibold">
+          Denis
+        </Link>
 
-      <nav className="flex gap-6 text-sm text-neutral-700">
-        {nav.map((item) => {
-          const isActive = pathname === item.href;
-          return (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={isActive ? "text-neutral-900" : "hover:text-neutral-900"}
-            >
-              {item.label}
-            </Link>
-          );
-        })}
-      </nav>
+        {/* Desktop nav */}
+        <nav className="hidden gap-6 text-sm text-neutral-700 sm:flex">
+          {nav.map((item) => {
+            const isActive = pathname === item.href;
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={isActive ? "text-neutral-900" : "hover:text-neutral-900"}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
+        </nav>
+
+        {/* Mobile button */}
+        <button
+          type="button"
+          className="sm:hidden rounded-xl border border-neutral-300 px-3 py-2 text-sm hover:border-neutral-400"
+          aria-expanded={open}
+          aria-controls="mobile-nav"
+          onClick={() => setOpen((v) => !v)}
+        >
+          {open ? "Close" : "Menu"}
+        </button>
+      </div>
+
+      {/* Mobile nav panel */}
+      {open && (
+        <nav
+          id="mobile-nav"
+          className="mt-4 rounded-2xl border border-neutral-200 p-3 sm:hidden"
+        >
+          <ul className="flex flex-col">
+            {nav.map((item) => {
+              const isActive = pathname === item.href;
+              return (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className={[
+                      "block rounded-xl px-4 py-3 text-sm",
+                      isActive
+                        ? "bg-neutral-900 text-white"
+                        : "text-neutral-700 hover:bg-neutral-50 hover:text-neutral-900",
+                    ].join(" ")}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+      )}
     </header>
   );
 }

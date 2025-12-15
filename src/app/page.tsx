@@ -1,3 +1,8 @@
+<div className="mb-6 rounded-xl border p-4">
+  <p className="sm:hidden">If you see this on desktop, sm is NOT working.</p>
+  <p className="hidden sm:block">If you see this on desktop, sm IS working.</p>
+</div>
+
 import Link from "next/link";
 
 export default function Home() {
