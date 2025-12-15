@@ -22,10 +22,11 @@ export default function Header() {
   }, [pathname]);
 
   return (
-    <header className="py-6">
+    <header className="sticky top-0 bg-white py-6 z-10">
       <div className="flex items-center justify-between">
-        <Link href="/" className="font-semibold">
-          Denis
+        <Link href="/" className="font-semibold text-lg">
+          <span className="text-neutral-900">Techno</span>
+          <span className="text-blue-600">Skills</span>
         </Link>
 
         {/* Desktop nav */}

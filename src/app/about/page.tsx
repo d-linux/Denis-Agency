@@ -2,8 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About | Denis Koumbou - Web Developer",
-  description: "Learn about Denis Koumbou, a Next.js developer specializing in modern, responsive websites for small businesses.",
+  title: "About | Techno Skills - Web Developer",
+  description: "Learn about Techno Skills, a Next.js developer specializing in modern, responsive websites for small businesses.",
 };
 
 export default function AboutPage() {
@@ -12,23 +12,23 @@ export default function AboutPage() {
       <div className="space-y-2">
         <h1 className="text-3xl font-bold tracking-tight">About</h1>
         <p className="max-w-2xl text-neutral-700">
-          I’m Denis, a web developer focused on building fast, clean websites
-          for small businesses. My goal is simple: help you look professional
+          Techno Skills is a web development service focused on building fast, clean websites
+          for small businesses. Our goal is simple: help you look professional
           online and turn visitors into leads.
         </p>
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2">
         <div className="rounded-2xl border border-neutral-200 p-6">
-          <h2 className="font-semibold">What I do</h2>
+          <h2 className="font-semibold">What we do</h2>
           <p className="mt-2 text-sm text-neutral-700">
-            I design and build modern websites using Next.js and Tailwind.
-            I focus on clarity, speed, and a smooth mobile experience.
+            We design and build modern websites using Next.js and Tailwind.
+            We focus on clarity, speed, and a smooth mobile experience.
           </p>
         </div>
 
         <div className="rounded-2xl border border-neutral-200 p-6">
-          <h2 className="font-semibold">How I work</h2>
+          <h2 className="font-semibold">How we work</h2>
           <p className="mt-2 text-sm text-neutral-700">
             Clear milestones, quick feedback loops, and simple decisions.
             You’ll always know what’s happening and what comes next.
@@ -37,7 +37,7 @@ export default function AboutPage() {
       </div>
 
       <div className="rounded-2xl border border-neutral-200 p-6">
-        <h2 className="font-semibold">My process</h2>
+        <h2 className="font-semibold">Our process</h2>
         <ol className="mt-4 grid gap-4 sm:grid-cols-3">
           <li className="rounded-2xl border border-neutral-200 p-5">
             <p className="text-sm font-medium text-neutral-600">Step 1</p>

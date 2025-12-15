@@ -2,8 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Services | Denis Koumbou - Web Developer",
-  description: "Web development services by Denis Koumbou: Landing pages, business websites, and custom web apps built with Next.js.",
+  title: "Services | Techno Skills - Web Developer",
+  description: "Web development services by Techno Skills: Landing pages, business websites, and custom web apps built with Next.js.",
 };
 
 type Package = {
@@ -107,7 +107,7 @@ export default function ServicesPage() {
         <h2 className="font-semibold">How pricing works</h2>
         <p className="mt-2 text-sm text-neutral-700">
           Pricing depends on pages, content readiness, and any special features.
-          Tell me what you need and I’ll reply with a simple quote and timeline.
+          Tell me what you need and we’ll reply with a simple quote and timeline.
         </p>
       </div>
 

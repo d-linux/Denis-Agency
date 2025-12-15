@@ -47,7 +47,7 @@ export default function ContactPage() {
       <div className="space-y-2">
         <h1 className="text-3xl font-bold tracking-tight">Contact</h1>
         <p className="max-w-2xl text-neutral-700">
-          Tell me what you need and I’ll reply with next steps. This form is
+          Tell me what you need and we’ll reply with next steps. This form is
           frontend-only for now; we’ll connect it to Supabase after the UI is
           final.
         </p>

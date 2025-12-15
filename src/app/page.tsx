@@ -2,10 +2,10 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home | Denis Koumbou - Web Developer",
+  title: "Home | Techno Skills - Web Developer",
   description: "Modern websites for small businesses that want more leads. Next.js Developer specializing in fast, responsive websites using Next.js and Tailwind.",
   openGraph: {
-    title: "Home | Denis Koumbou - Web Developer",
+    title: "Home | Techno Skills - Web Developer",
     description: "Modern websites for small businesses that want more leads. Next.js Developer specializing in fast, responsive websites.",
   },
 };
@@ -17,13 +17,13 @@ export default function Home() {
       <section className="space-y-6">
         <div className="space-y-3">
           <p className="text-sm font-medium text-neutral-600">
-            Next.js Developer • Websites that convert
+            Techno Skills • Websites that convert
           </p>
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
             Modern websites for small businesses that want more leads.
           </h1>
           <p className="max-w-2xl text-neutral-700">
-            I design and build fast, responsive websites using Next.js and
+            We design and build fast, responsive websites using Next.js and
             Tailwind. Clean design, clear messaging, and a smooth experience on
             mobile.
           </p>
@@ -160,7 +160,7 @@ export default function Home() {
               Ready to build your website?
             </h2>
             <p className="text-sm text-neutral-700">
-              Send a short message and I’ll reply with next steps.
+              Send a short message and we’ll reply with next steps.
             </p>
           </div>
           <Link

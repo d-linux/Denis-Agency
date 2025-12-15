@@ -2,8 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Projects | Denis Koumbou - Web Developer",
-  description: "Explore Denis Koumbou's portfolio of web development projects, including modern websites built with Next.js and Tailwind CSS.",
+  title: "Projects | Techno Skills - Web Developer",
+  description: "Explore Techno Skills' portfolio of web development projects, including modern websites built with Next.js and Tailwind CSS.",
 };
 
 type Project = {
@@ -122,7 +122,7 @@ export default function ProjectsPage() {
         <h2 className="font-semibold">Want something similar?</h2>
         <p className="mt-2 text-sm text-neutral-700">
           Tell me what business you run and what you want the website to do
-          (calls, bookings, leads). I’ll reply with a simple plan.
+          (calls, bookings, leads). We’ll reply with a simple plan.
         </p>
         <div className="mt-4">
           <Link
